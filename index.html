@@ -62,7 +62,7 @@
                         <td>
                             <select id="callType">
                                 <option value="pstn" selected>PSTN</option>
-                                <option value="client">Twilio Client</option>
+                                <option value="client">Client</option>
                                 <option value="conference">Conference</option>
                                 <option value="enqueue">Enqueue (caller)</option>
                                 <option value="queue">Queue (agent)</option>
@@ -97,7 +97,7 @@
                         <td colspan="5"><div class="callMessages" style="padding-top: 9px;">Need to refresh the token.</div></td>
                     </tr>
                     <tr style="visibility: visible;">
-                        <td><button class="abutton" id="btn-trtoken" onclick="trToken();" style="visibility: visible;">TaskRouter Token</button></td>
+                        <td><button class="abutton" id="btn-trtoken" onclick="trToken();" style="visibility: visible;">Token</button></td>
                         <td><button class="abutton" id="btn-online" onclick="goAvailable();" disabled style="visibility: visible;">Go Online</button></td>
                         <td><button class="abutton" id="btn-offline" onclick="goOffline();" disabled style="visibility: visible;">Go Offline</button></td>
                         <td><button class="abutton" id="btn-acceptTR" onclick="acceptReservation();" disabled style="visibility: visible;">Accept</button></td>
@@ -109,7 +109,7 @@
                         <td colspan="5"><div class="trStatus" style="padding-top: 9px;">Status not set.</div></td>
                     </tr>
                     <tr>
-                        <td><div style="padding-top: 9px;">TaskRouter: </div></td>
+                        <td><div style="padding-top: 9px;">Token: </div></td>
                         <td colspan="5"><div class="trMessages" style="padding-top: 9px;">Need to refresh the token.</div></td>
                     </tr>
                 </table>
@@ -130,6 +130,5 @@
                 </table>
             </div>
         </div>
-        <script type="text/javascript" src="custom/pageBottom.js"></script>
     </body>
 </html>
