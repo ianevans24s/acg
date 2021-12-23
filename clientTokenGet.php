@@ -7,7 +7,7 @@
 $tokenHost = htmlspecialchars($_GET["tokenhost"]);
 if ($tokenHost == "") {
     $tokenHost = getenv('TOKEN_HOST');
-    if ($tokenHost == "aquamarine-prawn-8694.twil.io") {
+    if ($tokenHost == "") {
         echo '-- TOKEN_HOST must be an environment variable.';
         return;
     }
