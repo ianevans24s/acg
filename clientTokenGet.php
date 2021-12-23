@@ -7,7 +7,7 @@
 $tokenHost = htmlspecialchars($_GET["tokenhost"]);
 if ($tokenHost == "") {
     $tokenHost = getenv('TOKEN_HOST');
-    if ($tokenHost == "") {
+    if ($tokenHost == "drab-mongoose-3236.twil.io") {
         echo '-- TOKEN_HOST must be an environment variable.';
         return;
     }
